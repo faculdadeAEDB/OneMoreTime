@@ -1,0 +1,58 @@
+﻿@model OneMoreTime.Models.Cliente
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Cliente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CliNome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CliNome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CliEndereco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CliEndereco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CliTelefone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CliTelefone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CliBairro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CliBairro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CliCidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CliCidade)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

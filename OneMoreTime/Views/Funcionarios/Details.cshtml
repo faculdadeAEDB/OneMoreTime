@@ -1,0 +1,58 @@
+﻿@model OneMoreTime.Models.Funcionario
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Funcionario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FunNome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FunNome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FunEndereco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FunEndereco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FunTelefone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FunTelefone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FunCargo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FunCargo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FunCPF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FunCPF)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

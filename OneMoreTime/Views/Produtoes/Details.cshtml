@@ -1,0 +1,50 @@
+﻿@model OneMoreTime.Models.Produto
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Produto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProNome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProNome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProPercLucro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProPercLucro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProQtdEstoque)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProQtdEstoque)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProDescricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProDescricao)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

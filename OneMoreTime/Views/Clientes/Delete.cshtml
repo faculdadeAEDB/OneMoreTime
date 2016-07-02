@@ -1,0 +1,64 @@
+﻿@model OneMoreTime.Models.Cliente
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Cliente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CliNome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CliNome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CliEndereco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CliEndereco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CliTelefone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CliTelefone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CliBairro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CliBairro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CliCidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CliCidade)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
